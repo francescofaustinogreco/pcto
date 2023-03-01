@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px -1px 2px #dadce0, inset 0 1px 0 #dadce0;
+    margin-top: 4rem;
+    z-index: 1;
+
+    .contFooter{
+        width: $width;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px 25px 0px;
+
+        .textFooter{
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {    
+    footer{
+        position: absolute;
+        bottom: 0;
+
+        .contFooter{
+            width: 95vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px){    
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}

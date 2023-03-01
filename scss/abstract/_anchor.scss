@@ -1,0 +1,11 @@
+@mixin anchor(){
+    text-decoration: none;
+}
+
+@mixin anchorDefault(){
+    & > a{
+        color: $main;
+        font-weight: 600;
+        position: relative;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelangelo Petea - Avvocato</title>
+    <!-- links -->
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <!-- script -->
+    <script src="js/script.js" defer></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'it' },
+                'google_translate_element'
+            );
+        }
+</script>
+</head>
+
+<body>
+    <div class="headerBack">
+        <!-- Navbar -->
+        <nav>
+            <div class="contNav">
+                <div class="contLink">
+                    <div class="contNavLink">
+                        <a href="#"><img src="img/logo.svg" alt="logo" id="logo" loading="lazy"></a>
+                        <ul class="navLinks">
+                            <li class="link"><a href="html/consulenza.html">Consulenza</a></li>
+                            <li class="link"><a href="html/studio.html">Lo Studio</a></li>
+                            <li class="link"><a href="html/contatti.html">Contatti</a></li>
+                            <li>
+                                <div id="google_translate_element"></div>
+                            </li>
+                        </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" id="burger" viewBox="0 0 24 24">
+                            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- First -->
+        <section class="sectFirst">
+            <div class="contFirst">
+                <div class="contTextFirst">
+                    <h1 id="titleFirst">Avv. Michelangelo Petea</h1>
+                    <p>Avvocato specializzato in diritto civile</p>
+                </div>
+            </div>
+        </section>
+        <!-- End First -->
+    </div>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Diritto Pubblico -->
+        <section class="sectEco" id="pubblico">
+            <div class="contEco">
+                <img src="img/public.jpg" alt="diritto pubblico" id="imgEco" loading="lazy">
+                <div class="textEco">
+                    <h3>Diritto Civile</h3>
+                    <p>
+                        Quella branca del diritto che si occupa dello studio delle norme che disciplinano e
+                        regolamentano l'organizzazione e il funzionamento dello Stato </p>
+                </div>
+            </div>
+        </section>
+        <!-- End Diritto Pubblico -->
+
+        <!-- Diritto Privato -->
+        <section class="sectFast" id="privato">
+            <div class="contFast">
+                <img src="img/privato.jpg" alt="diritto privato" id="imgFast" loading="lazy">
+                <div class="textFast">
+                    <h3>Diritto Privato</h3>
+                    <p>
+                        Quella branca del diritto che regola i rapporti intersoggettivi tra i singoli consociati
+                        (persone fisiche e persone giuridiche) </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End Diritto Privato -->
+
+        <!-- Consulenza -->
+        <section class="sectGreen" id="green">
+            <div class="separatorGreen"></div>
+            <div class="contGreen">
+                <div class="textGreen">
+                    <h1>CONSULENZA GRATUITA</h1>
+                    <p>
+                        La prima consulenza che viene prenotata tramite il nostro sito web sarà gratuita
+                        <br>
+                        Si verrà reindirizzati in una pagina dedicata alla prenotazione
+                    </p>
+                    <div class="contMore">
+                        <a href="html/consulenza.html">
+                            Prenota Subito
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Consulenza -->
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="contFooter">
+            <div class="textFooter">
+                <h3>Avv. Michelangelo Petea</h3>
+                <p>P.IVA 00000000000</p>
+            </div>
+            <div>
+                <img src="img/logo.svg" alt="" style="width: 50px; height:50px;">
+            </div>
+            <div class="textFooter" style="text-align: right">
+                Via Mantova, 250
+                <br>
+                Montichiari(BS), 25018
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Go Up -->
+    <div class="contGo">
+        <div class="goUp" onclick="onTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" id="btnGo" viewBox="0 0 24 24">
+                <path
+                    d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.293,14.707L12,10.414l-4.293,4.293 l-1.414-1.414L12,7.586l5.707,5.707L16.293,14.707z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- End Go Up -->
+
+</body>
+
+</html>

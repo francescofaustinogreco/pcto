@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avv. Michelangelo Petea - Lo studio</title>
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+    <script src="../js/script.js" defer></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'it' },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="contNav">
+            <div class="contLink">
+                <div class="contNavLink">
+                    <a href="../index.html"><img src="../img/logo.svg" alt="logo" id="logo"></a>
+                    <ul class="navLinks">
+                        <li class="link"><a href="../html/consulenza.html">Consulenza</a></li>
+                        <li class="link"><a class="current">Lo Studio</a></li>
+                        <li class="link"><a href="../html/contatti.html">Contatti</a></li>
+                        <li>
+                            <div id="google_translate_element"></div>
+                        </li>
+                    </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="burger" viewBox="0 0 24 24">
+                        <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Studio -->
+    <section class="sectStudio">
+        <div class="contStudioMain">
+            <h1>Lo studio</h1>
+        </div>
+        <div class="contPresentazione">
+            <img src="../img/avvocato.jpg" alt="" id="imgAvvocato">
+            <div class="textPresentazione">
+                <h3>Avv. Michelangelo Petea</h3>
+                <p>
+                    Avvocato con esperienza in qualsiasi ambito
+                    del diritto, competente e affabile.
+                </p>
+            </div>
+        </div>
+        <div class="contPresentazione R">
+            <img src="../img/gabriel.jpg" alt="" id="imgAvvocato">
+            <div class="RT">
+                <h3>Dott. Gabriel</h3>
+                <p>
+                    Laureando in Giurisprudenza che lavora con
+                    noi da 2 anni. Ragazzo alla mano e super competente.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End Studio -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="contFooter">
+            <div class="textFooter">
+                <h3>Avv. Michelangelo Petea</h3>
+                <p>P.IVA 00000000000</p>
+            </div>
+            <div>
+                <img src="../img/logo.svg" alt="" style="width: 50px; height:50px;">
+            </div>
+            <div class="textFooter" style="text-align: right">
+                Via Mantova, 250
+                <br>
+                Montichiari(BS), 25018
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Go Up -->
+    <div class="contGo">
+        <div class="goUp" onclick="onTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" id="btnGo" viewBox="0 0 24 24">
+                <path
+                    d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.293,14.707L12,10.414l-4.293,4.293 l-1.414-1.414L12,7.586l5.707,5.707L16.293,14.707z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- End Go Up -->
+</body>
+
+</html>

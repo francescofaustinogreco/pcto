@@ -1,0 +1,61 @@
+.sectFirst{
+    width: 100%;
+    height: auto;
+
+    .contFirst{
+        width: 100%;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+        background-color: none;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top:0;left:0;right:0;bottom:0;
+            background-image: url(../img/home.jpg);
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .contTextFirst{
+            position: absolute;
+            top:0;left: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+
+            #titleFirst{
+                font-size: 3.5rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: white;
+            }
+
+            & > p{
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {    
+    .sectFirst{
+        .contFirst{
+            width: 90%;
+            flex-direction: column-reverse;
+            text-align: center;
+
+            #mainImg{
+                width: 100%;
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.contGo{
+    position: absolute;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 1rem;
+    display: none;
+
+    @keyframes scale-in-center {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+
+    @keyframes scale-out {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+
+    .goUp{
+        cursor: pointer;
+
+        #btnGo{
+            width: 65px;
+            height: 65px;
+            fill: $main;
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) {    
+  .contGo{
+    .goUp{
+      #btnGo{
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}

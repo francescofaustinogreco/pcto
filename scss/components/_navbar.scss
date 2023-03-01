@@ -1,0 +1,122 @@
+$heightNav : 10vh;
+$heightLargeNav : 7vh;
+
+
+nav{
+    width: 100%;
+    height: $heightNav;
+    top: 0;
+
+    .contNav{
+        position: fixed;
+        width: 100%;
+        height: $heightNav;
+        background-color: white;
+        box-shadow: 2px 0 6px #dadce0, inset 0 -1px 0 0 #dadce0;
+        z-index: 9999;
+
+        .contNavLink{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 75vw;
+            height: $heightNav;
+            margin: auto;
+
+            #logo{
+                width: 60px;
+                height: 60px;
+            }
+
+            .navLinks{
+                display: flex;
+                list-style-type: none;
+                width: 60%;
+                justify-content: space-between;
+                align-items: center;
+                
+
+                .link a{
+                    color: $heading;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0.5rem;
+                    border-radius: 8px;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color: $back;
+                    }
+                }
+            }
+        }
+
+        #burger{
+            width: 50px;
+            height:50px;
+            fill: $heading;
+            display: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) {    
+    nav{
+        height: $heightLargeNav;
+        .contNav{
+            height: $heightLargeNav;
+
+            .contNavLink{
+                height: $heightLargeNav;
+            }
+
+            .navLinks{
+                width: 50%;
+                height:$heightLargeNav;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {    
+    nav{
+        .contNav{
+
+            .contNavLink{
+                width: 90vw;
+
+                .navLinks{
+                    position:absolute;
+                    display:flex;
+                    right:0;
+                    top: 10vh;
+                    width:80vw;
+                    height:90vh;
+                    align-items:center;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    background: #fff;
+                    transform: translateX(100%);
+                    transition: transform 0.2s ease-in-out;
+                    box-shadow: inset 1px 0 0 0 #dadce0;
+
+                    .link a{
+                        font-size: 22px;
+                    }
+                }
+
+                .navLinks-active{
+                    transform: translateX(0%);
+                }
+            }
+
+            #burger{
+                display: block;
+                background-color: $light;
+                border-radius: 20px 4px;
+                padding: 0.3rem;
+            }
+        }
+    }
+}

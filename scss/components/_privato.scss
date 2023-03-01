@@ -1,0 +1,67 @@
+.sectFast{
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+
+    .contFast{
+        width: $width;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+    }
+    
+    #imgFast{
+        width: 450px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .textFast{
+        text-align: right;
+        width: 45%;
+        height: 100%;
+
+        & h3{
+            font-size: 1.5rem;
+        }
+
+        & p{
+            margin: 1rem 0rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {    
+    .sectFast{
+        .contFast{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .textFast{
+            margin-top: 2rem;
+            text-align: center;
+            width: 80%;
+            height: 100%;
+    
+            & h3{
+                font-size: 1.5rem;
+            }
+    
+            & p{
+                margin: 1rem 0rem;
+                font-size: 1.1rem;
+            }
+        }
+
+        #imgFast{
+            width: 90%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+}
+

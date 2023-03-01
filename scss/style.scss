@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 7rem;
+}
+
+//abstract
+@import 'abstract/anchor';
+@import 'abstract/colors';
+@import 'abstract/width';
+@import 'abstract/selection';
+
+//components
+@import 'components/navbar';
+@import 'components/first';
+@import 'components/pubblico';
+@import 'components/consulenza';
+@import 'components/footer';
+@import 'components/privato';
+@import 'components/btnup';
+@import 'components/contact';
+@import 'components/studio';
+
+body {
+    letter-spacing: 1px;
+}
+
+a {
+    @include anchor();
+}
+
+p {
+    line-height: 25px;
+    color: $text;
+}
+
+.current {
+    background-color: $light;
+}
+
+.goog-te-combo{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/world.svg);
+    cursor: pointer;
+    background-size: cover;
+    color: transparent;
+    border: none;
+    outline: none;
+
+    & option{
+        color: $heading;
+    }
+}
+
+
+.skiptranslate.goog-te-gadget {
+    padding: 8px 0px 0px 0px;
+    color: transparent;
+}
+
+.goog-logo-link{
+    display: none;
+}
